@@ -4,8 +4,11 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.*;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.Spinner;
+import android.widget.AdapterView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,11 +16,52 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Spinner spinner = (Spinner)findViewById(R.id.spinner);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener(){
+            //spinner選択時の処理
+            public void onItemSelected(AdapterView parent,View view,int position,long id){
+                //repsの回数を取得(String型)　
+                Spinner spinner = (Spinner) parent;
+                String s_reps = (String) spinner.getSelectedItem();
+                //Stringからintに変換
+                int reps = Integer.parseInt(s_reps);
+
+                EditText edit_weight = (EditText)findViewById(R.id.editText);
+                String s_weight = edit_weight.getText().toString();
+
+                //確認
+                Log.d("MAIN",s_weight+"を"+s_reps);
+
+
+            }
+            //spinner未選択時の処理
+            public void onNothingSelected(AdapterView parent){
+                Log.d("MAIN","NOitem");
+            }
+        });
+
+
+    }
+
+
+    public void reps_OnClick(View view){
+
+        Log.d("MAIN","reps");
     }
 
     //TextView押下時の挙動チェック
     public void RM1_OnClick(View view){
         Log.d("MAIN","RM1");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+
+            Log.d("MAIN","if");
+        }
+        else{
+            Log.d("MAIN","else");
+        }
     }
 
     public void RM2_OnClick(View view){
