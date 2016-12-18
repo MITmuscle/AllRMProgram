@@ -1,15 +1,14 @@
 package com.yamada.allrmprogram;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.util.StringBuilderPrinter;
-import android.view.*;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.widget.Spinner;
-import android.widget.AdapterView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,11 +38,13 @@ public class MainActivity extends AppCompatActivity {
                     //double rm1 = i_weight / 40 * reps + i_weight;
                     //MAX重量）＝（使用重量）×｛１＋（Reps／４０）｝
                     double rm1 = 0;
-                    rm1 = i_weight * (reps + 40) / 40;
-                    toast(String.valueOf(reps));
+                    rm1 = i_weight * (reps + 33.3) / 33.3;
+                    //toast(String.valueOf(reps));
 
                     //int型（整数値）に変換
-                    int i_rm1 = (int)rm1;
+                    double d_rm1 = Math.floor(rm1);
+                    int i_rm1 = (int)d_rm1;
+
                     //表示のために文字列に変換
                     String s_rm1 = String.valueOf(i_rm1);
                     Log.d("MAIN",s_rm1);
@@ -53,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
                     int[] i_x = new int[21];
 
                     //それぞれのRMを計算
-                    //100kg=Xkg÷40×3回+Xkg
+                    //100kg=Xkg÷40×3回+Xkg
                     for(int i=0;i<=20;i++) {
-                        x[i] = (33.3 * rm1) / (i + 33.3);
+                        x[i] = (33.3 * rm1) / (i+1 + 33.3);
                         i_x[i] = (int)x[i];
                         s_x[i] = String.valueOf(i_x[i]);
                     }
