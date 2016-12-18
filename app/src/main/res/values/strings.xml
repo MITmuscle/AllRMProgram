@@ -16,6 +16,8 @@
     <string name="rm15">15 RM</string>
     <string name="rm20">20 RM</string>
 
+    <string name="kg">kg</string>
+
     <string-array name="reps">
         <item>1</item>
         <item>2</item>

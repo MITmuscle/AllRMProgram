@@ -85,6 +85,21 @@
                 android:text="@string/rm1"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm1_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
         </LinearLayout>
 
         <LinearLayout
@@ -103,6 +118,21 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:text="@string/rm2"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm2_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
         </LinearLayout>
@@ -125,6 +155,21 @@
                 android:text="@string/rm3"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm3_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
         </LinearLayout>
 
         <LinearLayout
@@ -143,6 +188,21 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:text="@string/rm5"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm5_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
         </LinearLayout>
@@ -165,6 +225,21 @@
                 android:text="@string/rm7"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm7_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
         </LinearLayout>
 
         <LinearLayout
@@ -183,6 +258,21 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:text="@string/rm8"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm8_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
         </LinearLayout>
@@ -205,6 +295,21 @@
                 android:text="@string/rm10"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm10_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
         </LinearLayout>
 
         <LinearLayout
@@ -223,6 +328,21 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:text="@string/rm12"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm12_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
         </LinearLayout>
@@ -245,6 +365,21 @@
                 android:text="@string/rm15"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm15_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
         </LinearLayout>
 
         <LinearLayout
@@ -263,6 +398,21 @@
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:text="@string/rm20"
+                android:layout_weight="0.3"
+                android:textSize="12pt"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/rm20_text"
+                android:textSize="12pt"
+                android:gravity="center"
+                android:layout_weight="0.4" />
+
+            <TextView
+                android:text="@string/kg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
                 android:layout_weight="0.3"
                 android:textSize="12pt"/>
         </LinearLayout>
