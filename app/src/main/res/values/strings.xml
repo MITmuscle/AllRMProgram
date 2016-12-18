@@ -1,9 +1,12 @@
 <resources>
     <string name="app_name">RM CHALLENGE</string>
 
-    <string name="word1">できる回数を入力してください</string>
+    <string name="word1">重量と回数を入力してください</string>
 
     <string name="word2"> kg を</string>
+
+    <string name="re_text">○○kgで何回…？</string>
+    <string name="re_button">逆引き</string>
 
     <string name="rm1">1 RM</string>
     <string name="rm2">2 RM</string>
