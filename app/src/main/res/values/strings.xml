@@ -43,4 +43,8 @@
         <item>19</item>
         <item>20</item>
     </string-array>
+
+    <!--sub-->
+    <string name="test">テスト画面</string>
+    <string name="back">戻る</string>
 </resources>

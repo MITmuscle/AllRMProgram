@@ -1,5 +1,6 @@
 package com.yamada.allrmprogram;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -98,9 +99,11 @@ public class MainActivity extends AppCompatActivity {
 
         final Button button = (Button)findViewById(R.id.re_button);
         button.setOnClickListener(new View.OnClickListener(){
+            @Override
             public void onClick(View view){
                 if(view == button){
-                    toast("ボタン押された");
+                    Intent intent = new Intent(MainActivity.this,SubActivity.class);
+                    startActivity(intent);
                 }
             }
         });
