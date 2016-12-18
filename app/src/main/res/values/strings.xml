@@ -1,3 +1,41 @@
 <resources>
-    <string name="app_name">AllRMProgram</string>
+    <string name="app_name">RM CHALLENGE</string>
+
+    <string name="word1">できる回数を入力してください</string>
+
+    <string name="word2"> kg を</string>
+
+    <string name="rm1">1 RM</string>
+    <string name="rm2">2 RM</string>
+    <string name="rm3">3 RM</string>
+    <string name="rm5">5 RM</string>
+    <string name="rm7">7 RM</string>
+    <string name="rm8">8 RM</string>
+    <string name="rm10">10 RM</string>
+    <string name="rm12">12 RM</string>
+    <string name="rm15">15 RM</string>
+    <string name="rm20">20 RM</string>
+
+    <string-array name="reps">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
 </resources>
