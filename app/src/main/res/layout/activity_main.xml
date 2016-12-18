@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:paddingLeft="20dp"
                     android:layout_weight="0.2"
-                    android:text="reps"
+                    android:text="@string/reps"
                     android:textSize="8pt"/>
 
             </LinearLayout>

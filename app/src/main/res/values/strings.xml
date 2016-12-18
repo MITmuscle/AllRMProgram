@@ -4,6 +4,7 @@
     <string name="word1">重量と回数を入力してください</string>
 
     <string name="word2"> kg を</string>
+    <string name="reps">reps</string>
 
     <string name="re_text">○○kgで何回…？</string>
     <string name="re_button">逆引き</string>
@@ -47,4 +48,10 @@
     <!--sub-->
     <string name="test">テスト画面</string>
     <string name="back">戻る</string>
+
+    <string name="word3">さあ、挑戦するんだ</string>
+
+    <string name="button1">成功</string>
+    <string name="button2">失敗</string>
+
 </resources>

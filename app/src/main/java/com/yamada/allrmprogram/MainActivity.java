@@ -14,6 +14,9 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    static int send_weight = 0;
+    static int send_reps = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
                 if(s_weight.length()!=0){
                     int i_weight = Integer.valueOf(s_weight);
+
                     //1RMの計算(挙上重量 / 40 * 挙上回数 + 挙上重量)
                     //double rm1 = i_weight / 40 * reps + i_weight;
                     //MAX重量）＝（使用重量）×｛１＋（Reps／33.3）｝
@@ -110,20 +114,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void reps_OnClick(View view){
-
-        Log.d("MAIN","reps");
-    }
-
     //TextView押下時の挙動チェック
     public void RM1_OnClick(View view){
-        Log.d("MAIN","RM1");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_1 = (TextView)findViewById(R.id.rm1_text);
             String s_rm_1 = rm_1.getText().toString();
+            int i_rm_1 = Integer.parseInt(s_rm_1);
 
-            Log.d("MAIN",s_rm_1);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_1);
+            intent.putExtra("reps", 1);
+
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -131,13 +134,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM2_OnClick(View view){
-        Log.d("MAIN","RM2");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_2 = (TextView)findViewById(R.id.rm2_text);
             String s_rm_2 = rm_2.getText().toString();
+            int i_rm_2 = Integer.parseInt(s_rm_2);
 
-            Log.d("MAIN",s_rm_2);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_2);
+            intent.putExtra("reps", 2);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -145,13 +151,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM3_OnClick(View view){
-        Log.d("MAIN","RM3");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_3 = (TextView)findViewById(R.id.rm3_text);
             String s_rm_3 = rm_3.getText().toString();
+            int i_rm_3 = Integer.parseInt(s_rm_3);
 
-            Log.d("MAIN",s_rm_3);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_3);
+            intent.putExtra("reps", 3);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -159,13 +168,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM5_OnClick(View view){
-        Log.d("MAIN","RM5");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_5 = (TextView)findViewById(R.id.rm5_text);
             String s_rm_5 = rm_5.getText().toString();
+            int i_rm_5 = Integer.parseInt(s_rm_5);
 
-            Log.d("MAIN",s_rm_5);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_5);
+            intent.putExtra("reps", 5);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -173,13 +185,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM7_OnClick(View view){
-        Log.d("MAIN","RM7");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_7 = (TextView)findViewById(R.id.rm7_text);
             String s_rm_7 = rm_7.getText().toString();
+            int i_rm_7 = Integer.parseInt(s_rm_7);
 
-            Log.d("MAIN",s_rm_7);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_7);
+            intent.putExtra("reps", 7);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -187,13 +202,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM8_OnClick(View view){
-        Log.d("MAIN","RM8");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_8 = (TextView)findViewById(R.id.rm8_text);
             String s_rm_8 = rm_8.getText().toString();
+            int i_rm_8 = Integer.parseInt(s_rm_8);
 
-            Log.d("MAIN",s_rm_8);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_8);
+            intent.putExtra("reps", 8);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -201,13 +219,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM10_OnClick(View view){
-        Log.d("MAIN","RM10");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_10 = (TextView)findViewById(R.id.rm10_text);
             String s_rm_10 = rm_10.getText().toString();
+            int i_rm_10 = Integer.parseInt(s_rm_10);
 
-            Log.d("MAIN",s_rm_10);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_10);
+            intent.putExtra("reps", 10);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -215,13 +236,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM12_OnClick(View view){
-        Log.d("MAIN","RM12");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_12 = (TextView)findViewById(R.id.rm12_text);
             String s_rm_12 = rm_12.getText().toString();
+            int i_rm_12 = Integer.parseInt(s_rm_12);
 
-            Log.d("MAIN",s_rm_12);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_12);
+            intent.putExtra("reps", 12);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -229,13 +253,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM15_OnClick(View view){
-        Log.d("MAIN","RM15");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_15 = (TextView)findViewById(R.id.rm15_text);
             String s_rm_15 = rm_15.getText().toString();
+            int i_rm_15 = Integer.parseInt(s_rm_15);
 
-            Log.d("MAIN",s_rm_15);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_15);
+            intent.putExtra("reps", 15);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
@@ -243,13 +270,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void RM20_OnClick(View view){
-        Log.d("MAIN","RM20");
         EditText edit = (EditText)findViewById(R.id.editText);
         if(edit.length()!=0) {
             TextView rm_20 = (TextView)findViewById(R.id.rm20_text);
             String s_rm_20 = rm_20.getText().toString();
+            int i_rm_20 = Integer.parseInt(s_rm_20);
 
-            Log.d("MAIN",s_rm_20);
+            Intent intent = new Intent(MainActivity.this,SubActivity.class);
+            intent.putExtra("weight", i_rm_20);
+            intent.putExtra("reps", 20);
+            startActivity(intent);
         }
         else{
             toast("重量を入力してください");
