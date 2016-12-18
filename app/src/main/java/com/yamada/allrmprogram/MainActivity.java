@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -36,10 +37,9 @@ public class MainActivity extends AppCompatActivity {
                     int i_weight = Integer.valueOf(s_weight);
                     //1RMの計算(挙上重量 / 40 * 挙上回数 + 挙上重量)
                     //double rm1 = i_weight / 40 * reps + i_weight;
-                    //MAX重量）＝（使用重量）×｛１＋（Reps／４０）｝
+                    //MAX重量）＝（使用重量）×｛１＋（Reps／33.3）｝
                     double rm1 = 0;
                     rm1 = i_weight * (reps + 33.3) / 33.3;
-                    //toast(String.valueOf(reps));
 
                     //int型（整数値）に変換
                     double d_rm1 = Math.floor(rm1);
@@ -84,18 +84,6 @@ public class MainActivity extends AppCompatActivity {
                     text15.setText(s_x[15-1]);
                     text20.setText(s_x[20-1]);
 
-                   /* switch(s_reps){
-                        case "1":text1.setText(s_weight);break;
-                        case "2":text2.setText(s_weight);break;
-                        case "3":text3.setText(s_weight);break;
-                        case "5":text5.setText(s_weight);break;
-                        case "7":text7.setText(s_weight);break;
-                        case "8":text8.setText(s_weight);break;
-                        case "10":text10.setText(s_weight);break;
-                        case "12":text12.setText(s_weight);break;
-                        case "15":text15.setText(s_weight);break;
-                        case "20":text20.setText(s_weight);break;
-                    }*/
                 }else{
                     //重量未入力時の処理
                     toast("挙上重量を入力してください");
@@ -108,9 +96,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        final Button button = (Button)findViewById(R.id.re_button);
+        button.setOnClickListener(new View.OnClickListener(){
+            public void onClick(View view){
+                if(view == button){
+                    toast("ボタン押された");
+                }
+            }
+        });
 
     }
-
 
     public void reps_OnClick(View view){
 
@@ -128,44 +123,134 @@ public class MainActivity extends AppCompatActivity {
             Log.d("MAIN",s_rm_1);
         }
         else{
-            Log.d("MAIN","else");
+            toast("重量を入力してください");
         }
     }
 
     public void RM2_OnClick(View view){
         Log.d("MAIN","RM2");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_2 = (TextView)findViewById(R.id.rm2_text);
+            String s_rm_2 = rm_2.getText().toString();
+
+            Log.d("MAIN",s_rm_2);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM3_OnClick(View view){
         Log.d("MAIN","RM3");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_3 = (TextView)findViewById(R.id.rm3_text);
+            String s_rm_3 = rm_3.getText().toString();
+
+            Log.d("MAIN",s_rm_3);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM5_OnClick(View view){
         Log.d("MAIN","RM5");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_5 = (TextView)findViewById(R.id.rm5_text);
+            String s_rm_5 = rm_5.getText().toString();
+
+            Log.d("MAIN",s_rm_5);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM7_OnClick(View view){
         Log.d("MAIN","RM7");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_7 = (TextView)findViewById(R.id.rm7_text);
+            String s_rm_7 = rm_7.getText().toString();
+
+            Log.d("MAIN",s_rm_7);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM8_OnClick(View view){
         Log.d("MAIN","RM8");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_8 = (TextView)findViewById(R.id.rm8_text);
+            String s_rm_8 = rm_8.getText().toString();
+
+            Log.d("MAIN",s_rm_8);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM10_OnClick(View view){
         Log.d("MAIN","RM10");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_10 = (TextView)findViewById(R.id.rm10_text);
+            String s_rm_10 = rm_10.getText().toString();
+
+            Log.d("MAIN",s_rm_10);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM12_OnClick(View view){
         Log.d("MAIN","RM12");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_12 = (TextView)findViewById(R.id.rm12_text);
+            String s_rm_12 = rm_12.getText().toString();
+
+            Log.d("MAIN",s_rm_12);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM15_OnClick(View view){
         Log.d("MAIN","RM15");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_15 = (TextView)findViewById(R.id.rm15_text);
+            String s_rm_15 = rm_15.getText().toString();
+
+            Log.d("MAIN",s_rm_15);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void RM20_OnClick(View view){
         Log.d("MAIN","RM20");
+        EditText edit = (EditText)findViewById(R.id.editText);
+        if(edit.length()!=0) {
+            TextView rm_20 = (TextView)findViewById(R.id.rm20_text);
+            String s_rm_20 = rm_20.getText().toString();
+
+            Log.d("MAIN",s_rm_20);
+        }
+        else{
+            toast("重量を入力してください");
+        }
     }
 
     public void toast(String message){
