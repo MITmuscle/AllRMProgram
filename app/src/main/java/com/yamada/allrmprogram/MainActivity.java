@@ -28,12 +28,27 @@ public class MainActivity extends AppCompatActivity {
                 //Stringからintに変換
                 int reps = Integer.parseInt(s_reps);
 
+                //記入したkgの値を取得　
                 EditText edit_weight = (EditText)findViewById(R.id.editText);
                 String s_weight = edit_weight.getText().toString();
 
-                //確認
-                Log.d("MAIN",s_weight+"を"+s_reps);
+                if(s_weight.length()!=0){
+                    int i_weight = Integer.valueOf(s_weight);
+                    //1RMの計算(挙上重量 / 33.3 * 挙上回数 + 挙上重量)
+                    double ex_rm = i_weight / 33.3 * reps + i_weight;
+                    //int型（整数値）に変換
+                    int ex_i_rm = (int)ex_rm;
+                    //表示のために文字列に変換
+                    String s_rm = String.valueOf(ex_i_rm);
+                    //確認
+                    Log.d("MAIN","計算した1RM = "+s_rm);
 
+                    TextView text = (TextView)findViewById(R.id.rm1);
+                    text.setText(s_rm);
+                }else{
+                    //重量未入力時の処理
+                    toast("挙上重量を入力してください");
+                }
 
             }
             //spinner未選択時の処理
@@ -98,6 +113,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void RM20_OnClick(View view){
         Log.d("MAIN","RM20");
+    }
+
+    public void toast(String message){
+        Toast toast = Toast.makeText(this,message,Toast.LENGTH_SHORT);
+        toast.show();
     }
 
 }
